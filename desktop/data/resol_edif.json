@@ -1,7 +1,9 @@
-[{
-
+[
+{
+"id":"1",
 "Direccion"       :   "Avenida ABc Miraflores",
-"Coordenadas"     :    "@-12.121691,-77.029192,17z",
+"lat"     :    "-12.121691",
+"lng"     :    "-77.029192",
 "Pisos"           :   "2/10",
 "Giro"            :   "Casa",
 "Deudas"          :    "NO",
@@ -14,10 +16,11 @@
 
 
 {
-
+"id":"2",
 
 "Direccion"       :   "Avenida def Miraflores",
-"Coordenadas"     :    "@-12.121691,-77.029192,17z",
+"lat"     :    "-12.121691",
+"lng"     :    "-77.029192",
 "Pisos"           :   "4/5",
 "Giro"            :   "Oficina",
 "Deudas"          :   "SI",
@@ -31,10 +34,11 @@
 
 
 {
-
+"id":"3",
 
 "Direccion"       :   "Avenida XYZ Miraflores",
-"Coordenadas"     :    "@-12.121691,-77.029192,17z",
+"lat"     :    "-12.121691",
+"lng"     :    "-77.029192",
 "Pisos"           :   "6/8",
 "Giro"            :   "Oficina",
 "Deudas"          :   "SI",
@@ -47,9 +51,10 @@
 
 
 {
-
+"id":"4",
 "Direccion"       :   "Calle La Paz Miraflores",
-"Coordenadas"     :    "@-12.121691,-77.029192,17z",
+"lat"     :    "-12.121691",
+"lng"     :    "-77.029192",
 "Pisos"           :   "8/10",
 "Giro"            :   "Casa",
 "Deudas"          :   "SI",
@@ -63,9 +68,10 @@
 
 
 {
-
+"id":"5",
 "Direccion"       :   "Avenida 369 Miraflores",
-"Coordenadas"     :    "@-12.121691,-77.029192,17z",
+"lat"     :    "-12.121691",
+"lng"     :    "-77.029192",
 "Pisos"           :   "10/10",
 "Giro"            :   "Oficina",
 "Deudas"          :   "SI",

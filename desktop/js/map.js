@@ -10,14 +10,15 @@ A.forEach = A.forEach || function(action, that) {
 
 $.ajax({
 	dataType: "json",
-	url: "data/congresistas.json",
+	url: "data/resol_edif.json",
 	success: function(data){
-		arCongresistas = [];
+		arPredios = [];
 		testObj=data;
-		for(var i=1;i<data.result.length-1;i++){
-			arCongresistas.push({value:i,label:data.result[i][1]+" - "+data.result[i][3]});
+		markersData=data;
+		for(var i=1;i<data.length-1;i++){
+			arPredios.push({value:i,label:data[i].Direccion+" - "+data[i].Giro});
 			//console.log(data.result[i][10]);
-			descripcion="";
+			/*descripcion="";
 			if(data.result[i][12]){
 				descripcion+="<div style='height: 20px;overflow: hidden;'><font style='float:left;padding-right: 2px;'>Correo 1: </font> <a href='mailto:"+data.result[i][12]+"'>"+data.result[i][12].substring(0,18)+"</a></div>"
 			}
@@ -29,34 +30,44 @@ $.ajax({
 			}
 			if(data.result[i][27]){
 				descripcion+="<div style='height: 20px;overflow: hidden;'><font style='float:left;padding-right: 2px;'>Twitter: </font> <a target='_blank' href='"+data.result[i][27]+"'>"+data.result[i][27].replace("https://twitter.com/","@").substring(0,18)+"</a></div>"
-			}
-			markersData.congresistas.push({name: data.result[i][1],
+			}*/
+			/*markersData.congresistas.push({name: data.result[i][1],
 				location_latitude: region[data.result[i][3]].lat+Math.random()/4, 
 				location_longitude: region[data.result[i][3]].lng+Math.random()/4,
 				map_image_url: 'img/img.png?r=2',
 				name_point: data.result[i][1],
 				description_point: descripcion,
 				url_point:  data.result[i][10].replace(/ /g,'')
-			});
-		}				
-		addMarcas_congresistas("congresistas");
+			});*/
+		}		
+		testObj=arPredios;		
+		//addMarcas_congresistas("congresistas");
+		initMap();
 		$( "#busqueda" ).autocomplete({
-	      	source: arCongresistas,
+	      	source: arPredios,
 	     	select: function( event, ui ) {
 	     		$("#busqueda").removeClass("centrado");
 	     		setTimeout(function(){
 	     			$(".velobusqueda").removeClass("velobusqueda");
 	     		},400);
-				
-		        console.log([event,ui]);
-		        google.maps.event.trigger(markers["congresistas"][ui.item.value-1], 'click');
+	     		
+	     		console.log(markersData[ui.item.value-1]);
+	     		objSeleccionado=markersData[ui.item.value-1];
+		        //console.log([event,ui]);
+		        //google.maps.event.trigger(markers["congresistas"][ui.item.value-1], 'click');
+		        //centrar el mapa
+
+
+		        mapObject.setCenter(new google.maps.LatLng(objSeleccionado.lat-0.02,objSeleccionado.lng));
+		        
+
 		        return false;
 		    }
 	    });
 	}
 });
 
-$.when(
+/*$.when(
     $.getJSON('data/construccion.json', function(data) {
     	markersData.construccion=data;
     }),
@@ -76,14 +87,8 @@ $.when(
     	markersData.transporte=data;
     })	
 ).then(function(contestMedia, contest) {
-	//console.log(markersData);
-    // do something    
-    // contestMedia = [ "success", statusText, jqXHR ]
-    // contest = [ "success", statusText, jqXHR ]
-
-    // response data can be gotten with contest[2].responseText
-    addMarcas();
-});
+	addMarcas();
+});*/
 
 
 function addMarcas() {
@@ -124,6 +129,10 @@ function addMarcas() {
 		
 	}
 };
+function initMap(){
+	mapObject = new google.maps.Map(document.getElementById('map'), mapOptions);
+}
+
 
 function addMarcas_congresistas(_grupo) {
 	var

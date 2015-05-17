@@ -3,13 +3,7 @@ testObj,
 mapObject,
 markers = [],
 markersData = {
-	'congresistas': [],
-	'transporte':[],
-	'deporte':[],
-	'educacion':[],
-	'salud':[],
-	'seguridad':[],
-	'construccion':[]
+	
 },
 region={
 	'AMAZONAS':{
