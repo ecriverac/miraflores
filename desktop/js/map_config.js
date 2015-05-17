@@ -119,9 +119,9 @@ region={
 };
 
 var mapOptions = {
-	zoom:6,
-	center: new google.maps.LatLng(-9.8935189, -75.2817579),
-	mapTypeId: google.maps.MapTypeId.HYBRID,
+	zoom:14,
+	center: new google.maps.LatLng(-12.1218104, -77.0295234),
+	mapTypeId: google.maps.MapTypeId.ROADMAP,
 
 	mapTypeControl: false,
 	mapTypeControlOptions: {

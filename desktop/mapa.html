@@ -33,70 +33,19 @@
 <div style="background: white;text-align: center;"><img src="img/marcaciudad.jpg" alt="#"></div>
 <!--div class="avatar"><span>5</span></div-->
 <h3><a href="#">Mira Place</a></h3>
-<a href="#" class="log_btn">Log in</a>
+<!--a href="#" class="log_btn">Log in</a-->
 </div>
 <ul class="side_menu">
-	<li><a href="index.html"><i class="fa fa-bookmark-o"></i>Promo page</a></li>
-	<li><a href="mapa.htmll" class="animsition-link"><i class="fa fa-map-marker"></i>Map</a></li>
-	<li><a href="05.html"><i class="fa fa-list"></i>Place list</a></li>
-	<li><a href="04.html"><i class="fa fa-th"></i>Place grid</a></li>
+	<li><a href="index.html" style="border-top:2px solid white"><!--<i class="fa fa-bookmark-o"></i>-->
+	<img src="icono/casita.jpg" style="width:40px;height:40px"/>
+	&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Casa</a></li>
+	<li><a href="mapa.htmll" class="animsition-link"><img src="icono/DEPARTAMENTO.jpg" style="width:40px;height:40px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Departamento</a></li>
+	<li><a href="05.html"><img src="icono/TERRENO.jpg" style="width:40px;height:40px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Terreno</a></li>
+	<li><a href="04.html"><img src="icono/oficina.jpg" style="width:40px;height:40px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Oficina</a></li>
+    <li><a href="04.html"><img src="icono/negocio.jpg" style="width:40px;height:40px"/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Negocio</a></li>
 </ul>
 </nav>
-<!--add-->
-<div class="add_place none" id="pl">
-<div class="place_form">
-<i class="fa fa-times close_window" id="close"></i>
-<h3>Si yo fuera congresista...</h3>
-<form id="frmMain">
-	<label>Mi Propuesta:<input type="text" id="tituloTxt"></label>
-	<label>Detalle: <textarea id="detalleTxt"></textarea></label>
-	<label style="  width: 48%;  float: left; margin-top:0%">Categoria:
-		<select id="categoriaCbo">
-			<option value="0">Seleccione Categoria</option>
-			<option value="transporte">Transporte</option>
-			<option value="seguridad">Seguridad</option>
-			<option value="construccion">Construcción</option>
-			<option value="educacion">Educación</option>
-			<option value="deporte">Deporte</option>
-			<option value="salud">Salud</option>
-		</select>
 
-	</label>
-	<label style="  width: 48%;  float: left; margin-top:0% ">Departamento:
-		<select id="departamentoCbo">
-			<option value="0">Seleccione Departamento</option>
-			<option value="AMAZONAS">AMAZONAS</option>
-			<option value="APURIMAC">APURIMAC</option>
-			<option value="AREQUIPA">AREQUIPA</option>
-			<option value="AYACUCHO">AYACUCHO</option>
-			<option value="CALLAO">CALLAO</option>
-			<option value="CALLAO">CUSCO</option>
-			<option value="HUANCAVELICA">HUANCAVELICA</option>
-			<option value="HUÁNUCO">HUÁNUCO</option>
-			<option value="JUNIN">JUNIN</option>
-			<option value="ICA">ICA</option>
-			<option value="LAMBAYEQUE">LAMBAYEQUE</option>
-			<option value="LIBERTAD">LIBERTAD</option>
-			<option value="LIMA">LIMA</option>
-			<option value="LIMA PROVINCIAS">LIMA PROVINCIAS</option>
-			<option value="LORETO">LORETO</option>
-			<option value="MADRE DE DIOS">MADRE DE DIOS</option>
-			<option value="MOQUEGUA">MOQUEGUA</option>
-			<option value="PASCO">PASCO</option>
-			<option value="PUNO">PUNO</option>
-			<option value="SAN MARTIN">SAN MARTIN</option>
-			<option value="TACNA">TACNA</option>
-			<option value="TUMBES">TUMBES</option>				
-			<option value="UCAYALI">UCAYALI</option>
-			<option value="ÁNCASH">ÁNCASH</option>
-		</select>
-	</label>
-	<label>Correo: <input type="text" id="correoTxt">
-	</label>
-	<a href="#" class="green_btn_header" id="add">Agregar</a>
-</form>
-</div>
-</div>
 
 <!--autorization-->
 <div class="add_place none" id="autorized">
@@ -125,6 +74,43 @@
 			</div>
 		</div>
 	</div>
+</div>
+
+
+<div class="divData">
+	<div>
+		<div>icon</div>
+		<div><label id="direccionTxt"></label></div>
+	</div>
+	<div>
+		<div>Pisos:</div>
+		<div><label id="pisosTxt"></label></div>
+	</div>
+	<div>
+		<div>Sanciones:</div>
+		<div><label id="sancionesTxt"></label></div>
+	</div>
+	<div>
+		<div>Deuda</div>
+		<div><label id="deudaTxt"></label></div>
+	</div>
+	<div>
+		<div>Sanciones</div>
+		<div>direccion</div>
+	</div>
+	<div>
+		<div>Entorno</div>
+		<div>direccion</div>
+	</div>
+	<div>
+		<div>Estacionamiento</div>
+		<div>direccion</div>
+	</div>
+	<div>
+		<div>Historia</div>
+		<div>direccion</div>
+	</div>
+
 </div>
 
 <!--categori menu-->

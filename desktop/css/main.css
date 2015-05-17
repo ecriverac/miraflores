@@ -141,24 +141,29 @@ a:hover {
 }
 
 .pushy .side_menu li {
+    
     display: block;
     list-style: none;
     margin-bottom: 0px;
-}
-
-.pushy .side_menu li a {
-    color: #63737C;
-    display: block;
+    background:white;
     border-top: 1px solid #0e76b8;
     border-bottom: 1px solid #0e76b8;
     margin-bottom: -1px;
+}
+
+.pushy .side_menu li a {
+
+    color:#0e76b8;
+    display: block;
+    
 }
 .pushy .side_menu li a span {padding: 12px 20px;}
 .pushy .side_menu li a i {
     color: #03aaac;
     padding: 12px;
     display: inline-block;
-    background: #0e76b8;
+    /*background: #0e76b8;*/
+    background:white;
     margin-right: 16px;
     font-size: 14px;
     transition: 0.3s;
@@ -179,7 +184,7 @@ a:hover {
 .pushy .side_menu li a:hover {
     color: #FFFFFF;
     text-decoration: none;
-    background: #03AAAC;
+    background: #0e76b8;
 }
 
 /*////////////////////////////////////////////////////////////*/
@@ -853,7 +858,7 @@ a:hover {
           background: rgba(0, 0, 0, 0.25);
     }
     .header .centrado{
-          margin-top: 50%;
+          margin-top: 40%;
           width: 90% !important;
           max-width: 90% !important;
     }
@@ -2210,23 +2215,8 @@ a:hover {
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.divData{
+    position: absolute;
+    margin-left: 250px;
+    z-index: 10;
+}
