@@ -51,7 +51,7 @@ a:hover {
 /*////////////////////////Side menu//////////////////////*/
 
 .pushy .profile {
-    background: #161C25;
+    background: #0e76b8;
     margin: -40px 0px -50px;
     padding: 40px 0px 50px;
 }
@@ -70,7 +70,7 @@ a:hover {
 
 .pushy .profile .avatar {
     width: 110px;
-    background: #161C25;
+    background: #0e76b8;
     height: 110px;
     border-radius: 100px;
     position: relative;
@@ -110,7 +110,8 @@ a:hover {
 }
 
 .pushy .profile .avatar img {
-    width: 110px;
+    margin-left: -10px;
+    width: 135px;
     border-radius: 100px;
     display: block;
     border: 2px solid #03AAAC;
@@ -145,8 +146,8 @@ a:hover {
 .pushy .side_menu li a {
     color: #63737C;
     display: block;
-    border-top: 1px solid #161C25;
-    border-bottom: 1px solid #161C25;
+    border-top: 1px solid #0e76b8;
+    border-bottom: 1px solid #0e76b8;
     margin-bottom: -1px;
 }
 .pushy .side_menu li a span {padding: 12px 20px;}
@@ -154,7 +155,7 @@ a:hover {
     color: #03aaac;
     padding: 12px;
     display: inline-block;
-    background: #161C25;
+    background: #0e76b8;
     margin-right: 16px;
     font-size: 14px;
     transition: 0.3s;
@@ -773,15 +774,15 @@ a:hover {
     }
     /*header*/
     .header {
-        background: rgba(0, 0, 0, 0.42);
+        /*background: rgba(0, 0, 0, 0.42);*/
         position: absolute;
         width: 100%;
         z-index: 9;
         transition: 0.3s;
     }
     .header:hover {
-        background: rgba(255, 255, 255, 0.42);
-        transition: 0.3s;
+        /*background: rgba(255, 255, 255, 0.42);
+        transition: 0.3s;*/
     }
     .open_side {
         float: left;
