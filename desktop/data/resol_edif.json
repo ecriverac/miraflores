@@ -4,8 +4,8 @@
 "Giro"            :   "Casa",
 "Deudas"          :    "NO",
 "Sanciones "      :    "SI,"
-"Entorno "        :     ""
-"Estacionamiento" :     "SI"
+"Entorno "        :     "",
+"Estacionamiento" :     "SI",
 "Historia"        :     "SI"
 
 },
@@ -16,9 +16,9 @@
 "Pisos"           :   "4/5",
 "Giro"            :   "Oficina",
 "Deudas"          :   "SI",
-"Sanciones "      :"SI"
-"Entorno "        :""
-"Estacionamiento" :"SI"
+"Sanciones "      :"SI",
+"Entorno "        :"",
+"Estacionamiento" :"SI",
 "Historia"        :"SI"
 
 },
@@ -30,9 +30,9 @@
 "Pisos"           :   "6/8",
 "Giro"            :   "Oficina",
 "Deudas"          :   "SI",
-"Sanciones "      :"SI"
-"Entorno "        :""
-"Estacionamiento" :"SI"
+"Sanciones "      :"SI",
+"Entorno "        :"",
+"Estacionamiento" :"SI",
 "Historia"        :"SI"
 
 },
@@ -43,9 +43,9 @@
 "Pisos"           :   "8/10",
 "Giro"            :   "Casa",
 "Deudas"          :   "SI",
-"Sanciones "      :"SI"
-"Entorno "        :""
-"Estacionamiento" :"SI"
+"Sanciones "      :"SI",
+"Entorno "        :"",
+"Estacionamiento" :"SI",
 "Historia"        :"SI"
 
 },
@@ -57,9 +57,9 @@
 "Pisos"           :   "10/10",
 "Giro"            :   "Oficina",
 "Deudas"          :   "SI",
-"Sanciones "      :"SI"
-"Entorno "        :""
-"Estacionamiento" :"SI"
+"Sanciones "      :"SI",
+"Entorno "        :"",
+"Estacionamiento" :"SI",
 "Historia"        :"SI"
 
 }
