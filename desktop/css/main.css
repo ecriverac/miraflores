@@ -133,7 +133,10 @@ a:hover {
 }
 
 .pushy .side_menu {
-    margin: 50px 0px;
+    bottom: 0px;
+    position: absolute;
+    width: 100%;
+    /*margin: 50px 0px;*/
     padding: 0px;
 }
 
