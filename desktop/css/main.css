@@ -838,6 +838,8 @@ a:hover {
         width: 100%;
         padding: 0px 10px;
         max-width: 400px;
+        -webkit-transition:  0.67s; /* Safari */
+        transition:  0.67s;
     }
     .header .velobusqueda{
           position: fixed;

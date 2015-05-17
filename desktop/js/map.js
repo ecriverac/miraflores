@@ -43,6 +43,11 @@ $.ajax({
 		$( "#busqueda" ).autocomplete({
 	      	source: arCongresistas,
 	     	select: function( event, ui ) {
+	     		$("#busqueda").removeClass("centrado");
+	     		setTimeout(function(){
+	     			$(".velobusqueda").removeClass("velobusqueda");
+	     		},400);
+				
 		        console.log([event,ui]);
 		        google.maps.event.trigger(markers["congresistas"][ui.item.value-1], 'click');
 		        return false;
