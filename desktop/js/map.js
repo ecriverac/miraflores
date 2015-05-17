@@ -58,8 +58,13 @@ $.ajax({
 		        //centrar el mapa
 
 
-		        mapObject.setCenter(new google.maps.LatLng(objSeleccionado.lat-0.02,objSeleccionado.lng));
-		        
+		        mapObject.setCenter(new google.maps.LatLng(objSeleccionado.lat-0.01,objSeleccionado.lng));
+
+		        marker = new google.maps.Marker({
+					position: new google.maps.LatLng(objSeleccionado.lat,objSeleccionado.lng),
+					map: mapObject,
+					icon: 'img/marker-blue.png',
+				});
 
 		        return false;
 		    }

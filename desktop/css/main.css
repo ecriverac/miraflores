@@ -609,7 +609,8 @@ a:hover {
     /*////////////////////////////////////////////////////////////*/
     /* map style */
     .map {
-        width: 100%;
+        left: 250px;
+        right: 0px;
         height: 100%;
         position: fixed !important;
     }
